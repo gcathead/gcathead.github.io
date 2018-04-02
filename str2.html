@@ -6,8 +6,8 @@
 <title>cathead</title>
 </head>
 <body link="red" vlink="black" alink="white" bgcolor="white">  <!-- цвет ссылок и фона -->
-
 <header>
+
 
   <div class="gradient"> <div class="enjoy-css">
    <a href="index.html">CATHEAD</a> </div> </div>
@@ -18,7 +18,42 @@
       <a href="str2.html" style="color: green">Эта страница</a><p>
     </nav>
   </header>
-  
+	<form action="#">
+<h4>↓↓↓ Введи что-то в секретное поле ↓↓↓</h4>
+<input placeholder="Ля давай уже" type = "password" name = "testInput" id = "testInput" oninput = "testFunction()"><input type="reset" value="Хнопошка" onclick="Button()" />
+<input id="checkBox" type="checkbox" >
+<input id="checkBox" type="checkbox" checked> 
+<p id = "info" ></p>
+
+
+<input type="range" list="tickmarks">
+
+<datalist id="tickmarks">
+  <option value="0">
+  <option value="10">
+  <option value="20">
+  <option value="30">
+  <option value="40">
+  <option value="50">
+  <option value="60">
+  <option value="70">
+  <option value="80">
+  <option value="90">
+  <option value="100">
+</datalist>
+
+<script>
+function testFunction() {
+	var x = document.getElementById("testInput").value;
+	document.getElementById("info").innerHTML = "Омагад ты ввел: " + x;
+}
+</script>
+
+<h1><input type="button" onclick="alert('Я тут, что хотел?')" value="Вызвать бога"></h1>
+
+
+
+</form>
 <h1>KEK?!</h1>	 
 </body>
 </html>
